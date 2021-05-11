@@ -1,0 +1,17 @@
+{% extends 'html/base.html' %}
+{% block title %}logout{% endblock %}
+{% block content %}
+<div class="container mt-5">
+	<div class="card col-md-6 mx-auto shadow-lg">
+		<!-- <h5>Successfully logged out</h5> -->
+		<div class="card-body">
+			<h3>Logged Out</h3>
+			<p>are you sure to login again?</p>
+			<p>please <a href="{% url 'lg' %}">click here</a> to proceed</p>
+		</div>
+		
+	</div>
+	
+</div>
+
+{% endblock %}

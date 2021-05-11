@@ -1,0 +1,14 @@
+{% extends 'html/base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="container mt-5">
+	<div class="jumbotron">
+		<h3>{% if not user.role == 1 %}
+			Guest {{user.username}} Home Page
+			{% else %}
+			HomePage
+			{% endif %}
+</h3>
+	</div>
+</div>
+{% endblock %}
